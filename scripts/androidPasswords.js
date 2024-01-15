@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const { resolve } = require('path');
+const {resolve} = require('path');
 const gradlePropsPath = resolve('android/gradle.properties');
 const androidKeysPath = resolve('android_keys.json');
 fs.readFile(gradlePropsPath, 'utf-8', (err, data) => {
