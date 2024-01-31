@@ -1,11 +1,7 @@
 module.exports = {
   root: true,
-  extends: [
-    '@react-native',
-    '@react-native-community',
-    'plugin:react-native/all',
-  ],
   plugins: ['react', 'react-native'],
+  extends: ['@react-native', '@react-native-community'],
   rules: {
     'react-native/sort-styles': 0,
     'no-console': 2,
@@ -18,6 +14,6 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     'no-extra-boolean-cast': 'off',
     'no-bitwise': 'off',
-    quotes: ['error', 'single', {allowTemplateLiterals: true}],
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
   },
 };

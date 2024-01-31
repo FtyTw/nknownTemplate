@@ -1,6 +1,7 @@
 module.exports = {
   presets: ['module:@react-native/babel-preset'],
   plugins: [
+    '@babel/plugin-transform-export-namespace-from',
     [
       'module-resolver',
       {
@@ -14,6 +15,7 @@ module.exports = {
           '@helpers': './src/helpers',
           '@asyncStorage': './src/asyncStorage',
           '@hooks': './src/hooks',
+          '@network': './src/network',
         },
       },
     ],

@@ -10,6 +10,7 @@
       "@helpers": ["./src/helpers"],
       "@asyncStorage": ["./src/asyncStorage"],
       "@hooks": ["./src/hooks"],
+      "@network": ["./src/network"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts"]
