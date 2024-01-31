@@ -1,8 +1,8 @@
-import {AnyAction, combineReducers, configureStore} from '@reduxjs/toolkit';
+import { AnyAction, combineReducers, configureStore } from '@reduxjs/toolkit';
 
-import {logInfo, logObject} from '@helpers';
-import {nknownNormalizers} from '@network';
-import {nknown} from '@redux/slices';
+import { logInfo, logObject } from '@helpers';
+import { nknownNormalizers } from '@network';
+import { nknown } from '@redux/slices';
 
 const customMiddleWare = (api: any) => (next: any) => (action: any) => {
   const [, actionName] = action.type.split('/');
@@ -33,7 +33,7 @@ const resettableRootReducer = (
   action: AnyAction,
 ) => {
   if (action.type === 'auth/logout') {
-    state = {...state};
+    state = { ...state };
     Object.keys(reducers).forEach(key => delete state[key]);
   }
 

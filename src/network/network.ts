@@ -19,7 +19,7 @@ class Network {
       config: InternalAxiosRequestConfig,
     ) => Promise<InternalAxiosRequestConfig> | InternalAxiosRequestConfig,
   ) {
-    const axiosInstance = axios.create({baseURL, ...axiosDefaults});
+    const axiosInstance = axios.create({ baseURL, ...axiosDefaults });
 
     axiosInstance.interceptors.request.use(onFulfilled, error => error);
     axiosInstance.interceptors.response.use(

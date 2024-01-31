@@ -1,10 +1,10 @@
 /*** system modules ***/
-const {resolve} = require('path');
+const { resolve } = require('path');
 const fs = require('fs');
 
 /*** own modules ***/
 
-const {logInfo} = require('helpers');
+const { logInfo } = require('helpers');
 const navigationPreparations = (resultBundleName, callback) => {
   const bundlePath = resultBundleName.replace('com.', '').split('.').join('/');
   const mainActivityPath = resolve(

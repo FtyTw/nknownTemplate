@@ -1,14 +1,14 @@
 /*** system modules ***/
 const fs = require('fs');
 const chalk = require('chalk');
-const {exec} = require('child_process');
+const { exec } = require('child_process');
 const readline = require('readline-sync');
 
 /*** own modules ***/
-const {navigationPreparations} = require('./navigation');
-const {logInfo, logError} = require('./helpers');
+const { navigationPreparations } = require('./navigation');
+const { logInfo, logError } = require('./helpers');
 
-const {appName, bundleName, name} = JSON.parse(
+const { appName, bundleName, name } = JSON.parse(
   fs.readFileSync('package.json', 'utf8'),
 );
 const defBundleName = 'com.' + name.toLowerCase();

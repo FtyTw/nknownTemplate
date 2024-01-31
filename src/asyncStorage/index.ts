@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {logError} from '@helpers';
+import { logError } from '@helpers';
 
 export const STORAGE_KEYS = {
   AUTH_KEY: 'token',

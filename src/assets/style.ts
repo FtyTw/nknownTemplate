@@ -1,5 +1,5 @@
-import {StyleSheet} from 'react-native';
-import {mainColors} from './colors';
+import { StyleSheet } from 'react-native';
+import { mainColors } from './colors';
 
 // define own fontStyles used for the project
 export const fontFamily = 'Roboto-Regular';
@@ -23,4 +23,4 @@ const trackColorToggle = {
   true: mainColors.black,
 };
 
-export {style, trackColorToggle};
+export { style, trackColorToggle };
