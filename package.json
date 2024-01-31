@@ -8,7 +8,7 @@
     "lint-fix": "eslint . --fix",
     "start": "react-native start",
     "test": "jest",
-    "android": "yarn run android_keys && react-native run-android",
+    "android": "react-native run-android",
     "ios": "react-native run-ios --simulator=\"iPhone 13\"",
     "ios8": "react-native run-ios --simulator=\"iPhone 8\"",
     "ios14": "react-native run-ios --simulator=\"iPhone 14 Pro Max\"",
@@ -30,6 +30,7 @@
     "patch-package": "^8.0.0",
     "react": "18.2.0",
     "react-native": "0.73.3",
+    "react-native-eject": "^0.2.0",
     "react-redux": "^9.1.0"
   },
   "devDependencies": {
