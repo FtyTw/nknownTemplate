@@ -16,6 +16,22 @@ const style = StyleSheet.create({
   w100: {
     width: '100%',
   },
+  /*** fonts ***/
+  fontSmall: {
+    fontFamily,
+    fontSize: 14,
+  },
+  fontRegular: {
+    fontFamily,
+    fontSize: 16,
+  },
+  fontHuge: {
+    fontFamily,
+    fontSize: 20,
+  },
+  bold: { fontFamily: fontFamilyBold },
+  extraBold: { fontFamily: fontFamilyExtraBold },
+  uppercase: { textTransform: 'uppercase' },
 });
 
 const trackColorToggle = {
