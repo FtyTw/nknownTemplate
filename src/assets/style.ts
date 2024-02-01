@@ -16,6 +16,11 @@ const style = StyleSheet.create({
   w100: {
     width: '100%',
   },
+  justifyAlign: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  link: { textDecorationLine: 'underline', color: mainColors.blue },
   /*** fonts ***/
   fontSmall: {
     fontFamily,
@@ -32,6 +37,17 @@ const style = StyleSheet.create({
   bold: { fontFamily: fontFamilyBold },
   extraBold: { fontFamily: fontFamilyExtraBold },
   uppercase: { textTransform: 'uppercase' },
+
+  shadow: {
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3,
+    elevation: 4,
+  },
 });
 
 const trackColorToggle = {

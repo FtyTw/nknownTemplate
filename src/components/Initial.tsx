@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { ImageBackground, StyleSheet } from 'react-native';
 
+/*** components ***/
+import { InputComponent } from '@components/InputComponent';
+
 /*** helpers ***/
 import { logError, logObject } from '../helpers';
 
@@ -38,7 +41,8 @@ export const InitialComponent = () => {
     <ImageBackground
       resizeMode={'center'}
       source={images.unknown}
-      style={[style.flex, styles.main]}
-    />
+      style={[style.flex, style.justifyAlign, styles.main]}>
+      <InputComponent />
+    </ImageBackground>
   );
 };
